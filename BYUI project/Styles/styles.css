@@ -7,6 +7,15 @@ nav {
     padding: 10px;
 }
 
+.main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#active {
+    background-color: white;
+    color: steelblue;
+}
 a {
     color: white;
     margin: 40px
