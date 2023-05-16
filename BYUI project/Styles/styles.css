@@ -1,10 +1,11 @@
 body {
     text-align: center;
+    margin: 0;
   }
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 25px;
 }
 
 .main-para {
@@ -23,6 +24,7 @@ a {
 
 h1 {
     color: steelblue;
+    margin: 50px 0;
 }
 
 img {
@@ -34,5 +36,14 @@ footer {
     background-color: steelblue;
     color: white;
     margin-top: 15cm;
+}
+
+footer p {
+    padding: 25px;
+}
+
+a {
+    color: white;
+    padding: 25px;
 }
 /*{}*/
