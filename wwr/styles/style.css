@@ -1,7 +1,32 @@
 
 /*In that rule, let's set the max-width of the page to 1600px. Doing it on that <div> will make sure that no element on the page can be wider than that.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+#logo_link {
+    padding-top: 5px;
+}
+
+h2 {
+    margin: 0;
+}
+
+#hero-msg h4, #hero-msg a {
+    font-family: Montserrat, sans-serif;
+}
+
+.home-grid {
+    font-family: Montserrat, sans-serif;
+}
+
+#content {
+    font-family: Montserrat, sans-serif;
+}
+
 body {
     background-color: #f0f8ff;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -17,6 +42,7 @@ nav a {
     text-align: center;
     color: black;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -28,6 +54,11 @@ nav a:hover {
     background-color: #fed8b1;
     color:#3b3c36;
     text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -53,15 +84,27 @@ main section {
 
 .msg {
     background-color: #fed8b1;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #fed8b1;
     color: #3b3c36;
+    font-family: Montserrat, sans-serif;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+#hero-img {
+    width: 100%;
 }
 
 .home-title {
     color: black;
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -70,10 +113,14 @@ h4 {
 
 .msg h2 {
     color: black;
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana;
 }
 
 .msg p {
     color: black;
+    font-family: Montserrat, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer a {
@@ -91,6 +138,7 @@ footer a:hover {
 
 .icon { 
     width: 80px;
+    padding-top: 10px;
 }
 
 footer p {
@@ -99,4 +147,20 @@ footer p {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #fed8b1;
+}
+
+main section img {
+    box-sizing: border-box;
 }
