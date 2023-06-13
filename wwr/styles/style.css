@@ -282,7 +282,7 @@ main section img {
     margin-left: 40px;
 }
 .card-img-first {
-    width: 700px;
+    width: 49%;
     margin: 40px 40px 40px;
     border-radius: 20px;
     float:left;
@@ -304,7 +304,7 @@ main section img {
     margin-left: 40px;
 }
 .card-img-second {
-    width: 700px;
+    width: 49%;
     margin: 40px 40px 40px;
     border-radius: 20px;
     float: right;
@@ -317,7 +317,7 @@ main section img {
     margin-left: 40px;
 }
 .card-img-third {
-    width: 700px;
+    width: 49%;
     margin: 40px 40px 40px;
     border-radius: 20px;
     float: left;
