@@ -365,6 +365,76 @@ ul {
     color: black;
 }
 
+/*---Contact-Us-Page---*/
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+
+.moveDown {
+    margin-top: 3em;
+}
+
+.form-case {
+    margin: 0 auto;
+    width: 700px;
+    margin-top: 200px;
+} 
+ 
+form {
+    margin: 0 auto;
+    width: 600px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em; 
+}
+
+.form-line {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1.5em;
+}
+
+label {
+    display: inline-block;
+    width: 190px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.bottom-message {
+    padding-left: 90px;
+}
+
+.bottom-self {
+    margin-left: 0.5em;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
