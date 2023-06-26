@@ -223,6 +223,9 @@ main img {
   margin: auto;
   margin-top: 100px;
 }
+#slideshow-container img {
+   width: 100%;
+}
 
 /* Hide the images by default */
 .mySlides {
