@@ -135,6 +135,7 @@ nav a:nth-of-type(2):hover, nav a:nth-of-type(3):hover, nav a:nth-of-type(4):hov
     z-index: -1;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 
