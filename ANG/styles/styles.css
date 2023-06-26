@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #ff0000   ;
+    --secondary-color: #ffd800 ;
+    --accent1-color: #003153;
+    --accent2-color: ffffff;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: Signika Negative, sans-serif;
+    --paragraph-font: GFS Didot, serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #003153;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #003153; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #ff0000  ;
+    --nav-link-color: #ffffff;
+    --nav-background-color: #003153;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #003153;
+  }
+
+body {
+    max-width: 1600px;
+    min-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.whole-page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 17.3% 32.7% 32.7% 17.3%;
+    grid-template-rows: repeat(15, 65px);
+    box-sizing: border-box;
+}
+
+/*---Navegation bar---*/
+header {
+    width: 100%;
+    grid-row: 1/3;
+    grid-column: 1/5;
+
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 85px 60px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ffd800;
+}
+nav {
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 1/7;
+    box-sizing: border-box;
+
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 10px;
+   
+    font-size: 17px;
+    background-color: #ff0000;
+    border-bottom: 1px solid #003153;
+
+    display:grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(5, 17px);
+    min-height: 0px;
+    display: flex;
+    align-content: space-around;
+}
+
+.logo-Angola {
+    width: 75px;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    border-radius: 100%;
+}
+nav div {
+    margin-top: 10px;
+    width: 100%;
+    grid-row: 1/6;
+    grid-column: 2/3;
+    font-family: Negative, sans-serif;
+}
+nav div h2 {
+    text-align: left;
+    font-size: 15px;
+    width: 100%;
+    height: 8px;
+}
+nav a:nth-of-type(2) {
+    width: 100%;
+    text-decoration: none;
+    font-family: Negative, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+nav a:nth-of-type(3) {
+    width: 100%;
+    text-decoration: none;
+    font-family: Negative, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+nav a:nth-of-type(4) {
+    width: 100%;
+    text-decoration: none;
+    font-family: Negative, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+nav a:nth-of-type(2):hover, nav a:nth-of-type(3):hover, nav a:nth-of-type(4):hover {
+    color: #003153;
+    padding: 20px;
+}
+.lower-bar {
+    grid-row: 2/3;
+    grid-column: 1/7;
+    background-color: rgb(255,255,0, 0.8);
+}
+.trasparent-map {
+    grid-row: 2/3;
+    grid-column: 4/6;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---Main part---*/
+main {
+    margin-top: 15px;
+    width: 100%;
+    grid-row: 3/17;
+    grid-column: 2/4;
+    height: 100%;
+    
+    border-left: 1px solid rgb(0,49,83, 0.2);
+    border-right: 1px solid rgb(0,49,83, 0.2);
+    background-color: rgb(0,49,83, 0.2);
+    z-index: -2;
+
+    min-height: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    font-family: Signika Negative, sans-serif; 
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    
+}
+.p-1 {
+    font-size: 139%;
+    font-family: GFS Didot, serif;
+    text-align: justify;
+    padding: 15px;
+    width:490px;
+} 
+main img {
+    padding: 15px;
+    width:50%;
+}
+.p-2 {
+    font-size: 139%;
+    font-family: GFS Didot, serif;
+    text-align: justify;
+    padding: 15px;
+    width:490px;
+} 
+.p-3 {
+    font-size: 139%;
+    font-family: GFS Didot, serif;
+    text-align: justify;
+    padding: 15px;
+    width:490px;
+} 
+.p-4 {
+    font-size: 139%;
+    font-family: GFS Didot, serif;
+    text-align: justify;
+    padding: 15px;
+    width: 100%;
+} 
+/*---slide part---*/
+.slide {
+    margin-top: 15px;
+    width: 100%;
+    grid-row: 17/23;
+    grid-column: 2/4;
+    height: 100%;
+    
+    border-left: 1px solid rgb(0,49,83, 0.2);
+    border-right: 1px solid rgb(0,49,83, 0.2);
+    background-color: rgb(0,49,83, 0.2);
+
+    min-height: 0px;
+    padding: 0px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+#slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 100px;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+footer {
+    width: 100%;
+    grid-row: 23/24;
+    grid-column: 1/5;
+    height: 100%;
+    
+    border-left: 1px solid rgb(0,49,83);
+    border-right: 1px solid rgb(0,49,83);
+    background-color: rgb(0,49,83);
+    z-index: -2;
+
+    min-height: 0px;
+    padding: 0px;
+
+    font-family: Signika Negative, sans-serif;
+    color: #ffffff;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    border: 5px white;
+}
+.footer-1 {
+    text-align: center;
+    border-right: 1px solid white;
+}
+.footer-1 p {
+    margin-top: 50px;
+}
+
+.footer-2 {
+    margin-left: 10px;
+}
+.footer-2 ul {
+    margin-left: -20px;
+    line-height: 40px;
+}
+
+.footer-3 {
+    margin-left: 10px;
+}
+.facebook-bottom {
+    width: 150px;
+    border: 1px solid white;
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.facebook-bottom img {
+    width: 60%;
+    padding-left: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+}
+.facebook-bottom a {
+    font-family: Signika Negative, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .8em;
+    padding-right: 6px;
+    text-align: 0 auto;
+}
+
+.instagram-bottom {
+    width: 150px;
+    border: 1px solid white;
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.instagram-bottom img {
+    width: 60%;
+    padding-left: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+}
+.instagram-bottom a {
+    font-family: Signika Negative, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .8em;
+    padding-right: 6px;
+    text-align: 0 auto;
+}
+
+.twitter-bottom {
+    width: 150px;
+    border: 1px solid white;
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.twitter-bottom img {
+    width: 60%;
+    padding-left: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+}
+.twitter-bottom a {
+    font-family: Signika Negative, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .8em;
+    padding-right: 6px;
+    text-align: 0 auto;
+}
+.site-plan {
+    font-family: Signika Negative, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.footer-3 a {
+    font-family: Signika Negative, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.twitter-bottom, .facebook-bottom, .instagram-bottom {
+    margin-bottom: 10px;
+}
+.twitter-bottom:hover, .facebook-bottom:hover, .instagram-bottom:hover {
+    background-color: #ffd800;
+}
+
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
