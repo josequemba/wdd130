@@ -457,6 +457,7 @@ footer {
     grid-row: 3/5;
     grid-column: 1/4;
     margin-left: .5%;
+    overflow: hidden;
 }
 .vert-tab-container {
     float: left;
